@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title><: block title -> { '迷い家' } :></title>
+  <link rel="stylesheet" href="/css/default.css" />
+  <link rel="stylesheet" href="/css/layout.css" />
+</head>
+<body>
+
+  <section id="section">
+
+    <hgroup id="header">
+      <h1>迷い家</h1>
+      <p>mayoiga</p>
+    </hgroup>
+
+    <nav id="nav">
+      <ul>
+        <li><a href="/">Top</a>
+        <li><a href="/information">Cricle</a>
+        <li><a href="/member">Member</a>
+      </ul>
+    </nav>
+
+    <article id="content">
+      <h2><: block page_title ->{'Top'} :></h2>
+: block content -> {
+    body
+:}
+    </article>
+    <nav id="pager"><a href="#TOP">▲page top</a></nav>
+
+    <footer id="footer">
+      <p>Copyright &copy; 迷い家, Inc. All rights reserved.</p>
+    </footer>
+
+  </section>
+
+</body>
+</html>
